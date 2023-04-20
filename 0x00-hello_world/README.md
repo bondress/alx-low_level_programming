@@ -14,3 +14,5 @@
 - The C file name will be saved the variable $CFILE
 
 4-puts.c is a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line. It uses the function puts. printf was not allowed. The program ends with the value 0.
+
+5-printf.c is a C program that prints exactly "with proper grammar, but the outcome is a piece of art,", followed by a new line.
