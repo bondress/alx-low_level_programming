@@ -17,3 +17,5 @@
 2-print_alphabet.c is a C program that prints the alphabet in lowercase, followed by a new line. (You can only use the putchar function)
 
 3-print_alphabets.c is a C program that prints the alphabet in lowercase, and then in uppercase, followed by a new line. You can only use the putchar function.
+
+4-print_alphabt.c is a C program that prints the alphabet in lowercase, followed by a new line (except q and e). I only used the putchar function, others were not allowed.
