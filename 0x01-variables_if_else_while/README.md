@@ -5,3 +5,11 @@
 		+ "is zero", if the number is 0
 		+ "is negative", if the number is less than 0
 	* followed by a new line.
+
+1-last_digit.c is a program that assigns a random number to the variable n each time it is executed.
+- The output of the program is:
+	* The string 'Last digit of ', followed by 'n', followed by 'is', followed by:
+		+ 'and is greater than 5' if the last digit of n is greater than 5.
+		+ 'and is 0' if the last digit of n is 0.
+		+ 'and is less than 6 and not 0' if the last digit of n is less than 6 and not 0.
+	* followed by a new line.
