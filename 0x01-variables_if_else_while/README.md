@@ -24,4 +24,6 @@
 
 6-print_numbersz.c is a C program that prints all single digit numbers of base 10 starting from 0, followed by a new line. (Not allowed: type char, functions printf, puts and others like it).
 
-7-print_tebahpla.c is a C program that prints the lowercase alphabet in reverse, followed by a new line. (Only putchar function allowed)
+7-print_tebahpla.c is a C program that prints the lowercase alphabet in reverse, followed by a new line. (Only putchar function allowed).
+
+8-print_base16.c is a C program prints all the numbers of base 16 in lowercase, followed by a new line. (Only putchar function allowed.)
