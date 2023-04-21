@@ -26,4 +26,12 @@
 
 7-print_tebahpla.c is a C program that prints the lowercase alphabet in reverse, followed by a new line. (Only putchar function allowed).
 
-8-print_base16.c is a C program prints all the numbers of base 16 in lowercase, followed by a new line. (Only putchar function allowed.)
+8-print_base16.c is a C program that prints all the numbers of base 16 in lowercase, followed by a new line. (Only putchar function allowed.)
+
+9-print_comb.c is a C program that prints all possible combinations of single-digit numbers.
+- Numbers must be separated by ,, followed by a space
+- Numbers should be printed in ascending order
+- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+- All your code should be in the main function
+- You can only use putchar four times maximum in your code
+- You are not allowed to use any variable of type char
