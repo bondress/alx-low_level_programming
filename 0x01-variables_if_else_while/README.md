@@ -20,4 +20,6 @@
 
 4-print_alphabt.c is a C program that prints the alphabet in lowercase, followed by a new line (except q and e). I only used the putchar function, others were not allowed.
 
-5-print_numbers.c is a C program prints all single digit numbers of base 10 starting from 0, followed by a new line.
+5-print_numbers.c is a C program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
+6-print_numbersz.c is a C program that prints all single digit numbers of base 10 starting from 0, followed by a new line. (Not allowed: type char, functions printf, puts and others like it).
