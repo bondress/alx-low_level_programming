@@ -54,3 +54,7 @@
 
 101-natural.c is a C program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
 - You are allowed to use the standard library
+
+102-fibonacci.c is a C program prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
+- The numbers must be separated by comma, followed by a space , 
+- You are allowed to use the standard library
