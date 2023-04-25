@@ -51,3 +51,6 @@
 100-times_table.c is a C function that  prints the n times table, starting with 0.
 - Prototype: void print_times_table(int n);
 - If n is greater than 15 or less than 0 the function should not print anything.
+
+101-natural.c is a C program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
+- You are allowed to use the standard library
