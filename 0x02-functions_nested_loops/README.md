@@ -23,3 +23,6 @@
 - Returns 1 and prints + if n is greater than zero
 - Returns 0 and prints 0 if n is zero
 - Returns -1 and prints - if n is less than zero
+
+6-abs.c is a C function computes the absolute value of an integer.
+- Prototype: int \_abs(int);
