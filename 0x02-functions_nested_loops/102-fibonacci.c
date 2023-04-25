@@ -8,31 +8,24 @@
  */
 int main(void)
 {
-	int c = 3;
+	int a = 0;
+	long b = 1, c = 2;
 
-	long int n1 = 1, n2 = 2;
-	long int n = n1 + n2;
-
-	printf("%lu, ", n1);
-	printf("%lu, ", n2);
-
-	while (c <= 50)
+	while (a < 50)
 	{
-		if (c == 50)
-		{
-			printf("%lu \n", n);
-		}
+		if (a == 0)
+			printf("%ld", b);
+		else if (a == 1)
+			printf(", %ld", c);
 		else
 		{
-			printf("%lu, ", n);
+			c += b;
+			b = c - b;
+			printf(", %ld", c);
 		}
-
-		n1 = n2;
-		n2 = n;
-
-		n = n1 + n2;
-		c++;
+		++a;
 	}
 
+	printf("\n");
 	return (0);
 }
