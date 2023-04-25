@@ -57,4 +57,7 @@
 
 102-fibonacci.c is a C program prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
 - The numbers must be separated by comma, followed by a space , 
+- You are allowed to use the standard library.
+
+103-fibonacci.c is a C program that that finds and prints the sum of the even-valued fibonacci terms, followed by a new line.
 - You are allowed to use the standard library
