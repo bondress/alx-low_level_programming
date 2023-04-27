@@ -9,3 +9,7 @@
 - Prototype: int \_isdigit(int c);
 - Returns 1 if c is a digit
 - Returns 0 otherwise
+
+**2. Collaboration is multiplication**
+2-mul.c is a C function that multiplies two integers.
+- Prototype: int mul(int a, int b);
