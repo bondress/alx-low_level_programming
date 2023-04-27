@@ -19,18 +19,23 @@ int main(void)
 	{
 		if (n % 3 == 0 && n % 5 == 0)
 		{
-			printf("%s ", "FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (n % 3 == 0)
 		{
-			printf("%s ", "Fizz");
+			printf("Fizz ");
 		} else if (n % 5 == 0)
 		{
-			printf("%s ", "Buzz");
+			if (n == 100)
+			{
+				printf("Buzz");
+				printf("\n");
+			}
+			else
+				printf("Buzz ");
 		}
 		else
 			printf("%d ", n);
 	}
-	putchar('\n');
 	return (0);
 }
