@@ -12,3 +12,6 @@ Prototype: void swap_int(int \*a, int \*b);
 
 4-print_rev.c is a C function that prints a string, in reverse, followed by a new line.
 Prototype: void print_rev(char \*s);
+
+5-rev_string.c is a C function that reverses a string.
+- Prototype: void rev_string(char \*s);
