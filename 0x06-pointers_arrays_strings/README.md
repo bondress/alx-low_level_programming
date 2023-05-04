@@ -11,3 +11,5 @@
 **4-rev_array.c** is a C function that reverses the content of an array of integers.
 
 **5-string_toupper.c** is a C function that changes all lowercase letters of a string to uppercase.
+
+**6-cap_string.c** is a C function that capitalizes all words of a string. Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
