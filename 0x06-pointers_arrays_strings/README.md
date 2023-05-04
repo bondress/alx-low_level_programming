@@ -5,3 +5,5 @@
 - src does not need to be null-terminated if it contains n or more bytes.
 
 **2-strncpy.c** is a C function that copies a string. It works exactly like strncpy.
+
+**3-strcmp.c** is a C function that compares two strings. It works exactly like strcmp.
