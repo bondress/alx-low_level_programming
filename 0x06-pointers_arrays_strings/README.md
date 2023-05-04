@@ -27,3 +27,5 @@
 - You are not allowed to use any ternary operation
 
 **100-rot13.c** contains a C function that encodes a string using rot13.
+
+**101-print_number.c** contains a C function that prints an integer.
