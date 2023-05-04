@@ -3,3 +3,5 @@
 **1-strncat.c** is a C function that concatenates two strings. This is similar to the previous function, except that:
 - it will use at most n bytes from src; and
 - src does not need to be null-terminated if it contains n or more bytes.
+
+**2-strncpy.c** is a C function that copies a string. It works exactly like strncpy.
