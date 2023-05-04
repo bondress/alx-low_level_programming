@@ -7,3 +7,5 @@
 **2-strncpy.c** is a C function that copies a string. It works exactly like strncpy.
 
 **3-strcmp.c** is a C function that compares two strings. It works exactly like strcmp.
+
+**4-rev_array.c** is a C function that reverses the content of an array of integers.
