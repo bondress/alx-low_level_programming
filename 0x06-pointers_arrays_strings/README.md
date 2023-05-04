@@ -41,3 +41,6 @@ Add one line to the given code, so that the program prints a[2] = 98, followed b
 - Do not remove anything from the initial code (not even the comments)
 - and don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
 - You are allowed to use the standard library
+
+**Task 11**
+A function that adds two numbers.
