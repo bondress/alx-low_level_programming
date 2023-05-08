@@ -9,3 +9,5 @@
 **4-strpbrk.c** is a C function that searches a string for any of a set of bytes.
 
 **5-strstr.c** is a C function that locates a substring.
+
+**7-print_chessboard.c** is a C function that prints the chessboard.
