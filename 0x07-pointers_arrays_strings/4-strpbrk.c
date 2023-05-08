@@ -1,28 +1,6 @@
 #include "main.h"
 
 /**
- * _strchr - locates the first occurence of a character
- * in a string.
- * @s: a pointer to the string
- * @c: the character to be located
- *
- * Return: a pointer to @c or NULL if the character
- * is not found.
- */
-char *_strchr(char *s, char c)
-{
-	int n;
-
-	for (n = 0; s[n] >= '\0'; n++)
-	{
-		if (s[n] == c)
-			return (s + n);
-	}
-
-	return ('\0');
-}
-
-/**
  * _strpbrk - searches a string for any of a set of bytes.
  * @s: the string to be searched.
  * @accept: the string used to search.
@@ -33,16 +11,16 @@ char *_strchr(char *s, char c)
  */
 char *_strpbrk(char *s, char *accept)
 {
+	int n;
+
 	while (*s)
 	{
-		if (_strchr(accept, *s))
+		for (n = 0; accept[n]; n++)
 		{
-			return (s);
+			if (*s == accept[n])
+				return (s);
 		}
-		else
-		{
-			s++;
-		}
+		s++;
 	}
 	return ('\0');
 }
