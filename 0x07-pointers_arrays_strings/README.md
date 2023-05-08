@@ -13,3 +13,5 @@
 **7-print_chessboard.c** is a C function that prints the chessboard.
 
 **8-print_diagsums.c** is a C function that prints the sum of the two diagonals of a square matrix of integers.
+
+**100-set_string.c** is a C function that sets the value of a pointer to a char.
