@@ -7,3 +7,5 @@
 **3-strspn.c** is a C function that gets the length of a prefix substring.
 
 **4-strpbrk.c** is a C function that searches a string for any of a set of bytes.
+
+**5-strstr.c** is a C function that locates a substring.
