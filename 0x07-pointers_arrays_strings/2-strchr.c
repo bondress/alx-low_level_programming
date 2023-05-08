@@ -13,14 +13,12 @@ char *_strchr(char *s, char c)
 {
 	char *findC;
 
-	do
-	{
+	do {
 		if (*s == c)
 		{
 			findC = s;
 			break;
 		}
-	}
-	while (*s++);
-	return findC;
+	} while (*s++);
+	return (findC);
 }
