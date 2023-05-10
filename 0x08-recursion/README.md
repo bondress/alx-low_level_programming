@@ -11,3 +11,5 @@
 **5-sqrt_recursion.c** is a C function that returns the natural square root of a number.
 
 **6-is_prime_number.c** is a C function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+**100-is_palindrome.c** is a C function that returns 1 if a string is a palindrome and 0 if not. (An empty string is a palindrome).
