@@ -46,7 +46,7 @@ char **strtow(char *str)
 	w = wordCount(str);
 	if (w < 1)
 		return (NULL);
-	newstr = malloc(sizeof(char) * (w + 1));
+	newstr = malloc(sizeof(char *) * (w + 1));
 	if (newstr == NULL)
 		return (NULL);
 	i = 0;
@@ -57,7 +57,7 @@ char **strtow(char *str)
 			j = 0;
 			while (str[j] != ' ')
 				j++;
-			newstr[i] = malloc(sizeof(char) * (j + 1));
+			newstr[i] = malloc(sizeof(char) * j + 1);
 			if (newstr[i] == NULL)
 			{
 				while (--i >= 0)
