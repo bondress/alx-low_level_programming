@@ -1,81 +1,102 @@
 #include "main.h"
 #include <stdlib.h>
 
-/**
- * recWordCounter - counts number of words recursively
- * @s: pointer to a char
- * @n: current index
- * Return: number of words in @s
- */
-int recWordCounter(char *s, int n)
-{
-	if (s[n] == '\0')
-		return (0);
-	if (s[n] == ' ' && s[n + 1] != ' ' && s[n + 1] != '\0')
-		return (1 + recWordCounter(s, n + 1));
-	return (recWordCounter(s, n + 1));
-}
+int word_l(char *s);
+int count_w(char *s);
+char **strtow(char *str);
 
 /**
- * wordCount - counts numberof words in an array of strings
- * @s: pointer to a char
- * Return: number of words in @s
- */
-int wordCount(char *s)
-{
-	if (s[0] != ' ')
-		return (1 + recWordCounter(s, 0));
-	return (recWordCounter(s, 0));
-}
-
-/**
- * strtow - splits a string into words
- * @str: string to be split
+ * word_l - Locates the index marking the end of the
+ *            first word contained within a string.
+ * @s: The string to be searched.
  *
- * Return: NULL is str == NULL or str == ""
- * or function fails, otherwise return
- * a pointer to @str
+ * Return: The index marking the end of the initial word pointed to by @s.
+ */
+int word_l(char *s)
+{
+	int i = 0, l = 0;
+
+	while (*(s + i) && *(s + i) != ' ')
+	{
+		l++;
+		i++;
+	}
+
+	return (l);
+}
+
+/**
+ * count_w - Counts the number of words contained within a string.
+ * @s: The string to be searched.
+ *
+ * Return: The number of words contained within @s.
+ */
+int count_w(char *s)
+{
+	int i = 0, w = 0, l = 0;
+
+	for (i = 0; *(s + i); i++)
+		l++;
+
+	for (i = 0; i < l; i++)
+	{
+		if (*(s + i) != ' ')
+		{
+			w++;
+			i += word_l(s + i);
+		}
+	}
+
+	return (w);
+}
+
+/**
+ * strtow - Splits a string into words.
+ * @str: The string to be split.
+ *
+ * Return: If str = NULL, str = "", or the function fails - NULL.
+ *         Otherwise - a pointer to an array of strings (words).
  */
 char **strtow(char *str)
 {
 	char **newstr;
-	int i, j, k, w;
+	int i = 0, ws, w, ls, l;
 
-	if (str == NULL || str[0] == 0)
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
-	w = wordCount(str);
-	if (w < 1)
+
+	ws = count_w(str);
+	if (ws == 0)
 		return (NULL);
-	newstr = malloc(sizeof(char *) * (w + 1));
+
+	newstr = malloc(sizeof(char *) * (ws + 1));
 	if (newstr == NULL)
 		return (NULL);
-	i = 0;
-	while (i < w && *str != '\0')
+
+	for (w = 0; w < ws; w++)
 	{
-		if (*str != ' ')
-		{
-			j = 0;
-			while (str[j] != ' ')
-				j++;
-			newstr[i] = malloc(sizeof(char) * j + 1);
-			if (newstr[i] == NULL)
-			{
-				while (--i >= 0)
-					free(newstr[--i]);
-				free(newstr);
-				return (NULL);
-			}
-			k = 0;
-			while (k < j)
-			{
-				newstr[i][k] = *str;
-				k++, str++;
-			}
-			newstr[i][k] = '\0';
+		while (str[i] == ' ')
 			i++;
+
+		ls = word_l(str + i);
+
+		newstr[w] = malloc(sizeof(char) * (ls + 1));
+
+		if (newstr[w] == NULL)
+		{
+			for (; w >= 0; w--)
+				free(newstr[w]);
+
+			free(newstr);
+			return (NULL);
 		}
-		str++;
+
+		for (l = 0; l < ls; l++)
+			newstr[w][l] = str[i++];
+
+		newstr[w][l] = '\0';
 	}
-	newstr[i] = '\0';
+	newstr[w] = NULL;
+
 	return (newstr);
 }
