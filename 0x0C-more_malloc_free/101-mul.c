@@ -53,7 +53,7 @@ int check_num(char **n)
 /**
  * str_init - initializes a string
  * @s: string to be initialized
- * @len: lenght of string
+ * @len: length of string
  *
  * Return: void
  */
@@ -97,8 +97,9 @@ char *mulcn(char c, char *s, int s_i, char *d, int d_i)
 		d[j] = a % 10 + '0';
 	}
 	if (arem)
+	{
 		return (NULL);
-
+	}
 	return (d);
 }
 
