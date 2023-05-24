@@ -7,7 +7,7 @@ Write a function that executes a function given as a parameter on each element o
 **Task 2: 2-int_index.c**
 Write a function that searches for an integer.
 
-**Task 3: 
+**Task 3: 3-main.c, 3-op_functions.c, 3-get_op_func.c, 3-calc.h**
 Write a program that performs simple operations (addition, subtratction, multiplication, division and modulo).
 
 This task requires that you create four different files.
@@ -28,3 +28,6 @@ This task requires that you create four different files.
 	- You have to use atoi to convert arguments to int
 	- You are not allowed to use any kind of loop
 	- You are allowed to use a maximum of 3 if statements
+
+**Task 4: 100-main_opcodes.c**
+Write a program that prints the opcodes of its own main function.
