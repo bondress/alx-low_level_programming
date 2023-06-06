@@ -10,28 +10,26 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *f_node, *l_node;
+	listint_t *f_node = head, *l_node = head;
 
-	if (head == NULL || head->next == NULL)
+	if (!head)
 		return (NULL);
 
-	f_node = head->next;
-	l_node = (head->next)->next;
-
-	while (l_node)
+	while (f_node && l_node && l_node->next)
 	{
-		if (f_node == l_node)
+		l_node = l_node->next->next;
+		f_node = f_node->next;
+		if (l_node == f_node)
 		{
-			f_node = l_node;
+			f_node = head;
 			while (f_node != l_node)
 			{
 				f_node = f_node->next;
 				l_node = l_node->next;
 			}
-			return (f_node);
+
+			return (l_node);
 		}
-		f_node = f_node->next;
-		l_node = (l_node->next)->next;
 	}
 	return (NULL);
 }
