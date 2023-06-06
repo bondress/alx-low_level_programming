@@ -43,3 +43,5 @@ Write a function that frees a listint_t list.
 
 **Task 14: 103-find_loop.c**
 Write a function that finds the loop in a linked list.
+
+(Made a mistake during last commit, meant to write advanced tasks, not mandatory taks)
