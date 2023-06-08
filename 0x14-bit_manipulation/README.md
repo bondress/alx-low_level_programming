@@ -15,3 +15,11 @@ Write a function that sets the value of a bit to 0 at a given index.
 
 **Task 5: 5-flip_bits.c**
 Write a function that returns the number of bits you would need to flip to get from one number to another.
+
+**Task 6: 100-get_endianness.c**
+Write a function that checks the endianness.
+
+**Task 7: 101-password**
+Find the password for this program (0x13.c).
+- Save the password in the file 101-password
+- Your file should contain the exact password, no new line, no extra space
