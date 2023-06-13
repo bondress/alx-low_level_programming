@@ -23,7 +23,7 @@ int cust_exit(int err, char *fname, int fdesc)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fname);
 			exit(err);
 		case 100:
-			dprintf(STDERR_FILENO, "Error: Can't close fd%d\n", fdesc);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdesc);
 			exit(err);
 		default:
 			return (0);
