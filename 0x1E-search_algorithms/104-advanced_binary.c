@@ -24,7 +24,7 @@ int bsr(int *array, int value,
 
 	m = (low + high) / 2;
 	printf("Searching in array: ");
-	for (b = low; b <= high; i++)
+	for (b = low; b <= high; b++)
 		printf("%i%s", array[b], b == high ? "\n" : ", ");
 
 	if (array[low] == value)
